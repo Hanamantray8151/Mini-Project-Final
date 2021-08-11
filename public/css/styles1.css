@@ -1,0 +1,207 @@
+body{
+    overflow-x: hidden;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.overlay1{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.overlay2{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.first-section{
+    background: rgb(128,128,128,0.6);
+    background-size: cover;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.second-section{
+    background-image: url(../images/background.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.graph-section input{
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.row {
+    padding: 10px 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.graph-section{
+    background-color: wheat;
+}
+
+.row .col .card:hover{
+    box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
+}
+
+.graph-image{
+    width: 400px;
+    height: 450px;
+}
+
+.third-section{
+    background-color: rgb(0,0,128,0.4);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.fourth-section{
+    background-color: rgb(128,128,128,0.3);
+    padding-top: 50px;
+}
+
+.fifth-section{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.card-image{
+    height: 200px;
+}
+
+.text-box{
+    margin: 10px;
+    margin-bottom: 20px;
+    background-color: honeydew;
+    padding: 15px 25px;
+    border-radius: 5px;
+    border: 2px solid black;
+    width: 35%;
+}
+.button {
+    background-image: linear-gradient(to right, #000046 0%, #1CB5E0  51%, #000046  100%)
+}
+.button {
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px 25px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 20px;
+    display: inline-block;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+i.fab {
+    display: inline-block;
+    width: 2rem;
+    border-radius: 60px;
+    box-shadow: 0px 0px 2px #888;
+    padding: 0.5em 0.6em;
+  
+}
+
+/* contact cards */
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    display: inline-block;
+    margin: 10px 50px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.contact-image{
+    width:300px;
+    height:300px; 
+    border: 5px solid white;
+    border-radius: 3%;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    background-color: green;
+    color: white;
+    text-align: left;
+    padding-left: 30px;
+    transform: rotateY(180deg);
+    border: 5px solid white;
+    border-radius: 3%;
+}
+
+.glow {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+  
+@keyframes glow {
+    from {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #e60073, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073;
+}
+    
+    to {
+      text-shadow: 0 0 10px #fff, 0 0 20px #ff4da6, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6;
+    }
+}
+
+/* footer section*/
+.footer_section {
+    font-weight: 500;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #010b2c;
+}
+
+.footer_section p {
+    color: rgba(254, 254, 255, 0.7);
+    margin: 0;
+    text-align: center;
+}
+
+.footer_section a {
+    color: rgba(254, 254, 255, 0.7);
+}
